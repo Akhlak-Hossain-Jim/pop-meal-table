@@ -60,6 +60,7 @@ export const AppContainer = styled.main`
     p {
       text-align: center;
       max-width: 836px;
+      margin: auto;
     }
   }
 `;
