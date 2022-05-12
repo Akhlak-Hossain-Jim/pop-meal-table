@@ -11,7 +11,7 @@ export const AppContainer = styled.main`
     background-color: #fff;
     width: 100%;
     overflow: auto;
-    height: calc(100vh - 20px);
+    max-height: calc(100vh - 20px);
     &_column {
       width: max(1218px, 100%);
       display: grid;
@@ -52,6 +52,14 @@ export const AppContainer = styled.main`
       &:not(:last-child) {
         border-bottom: 1px solid #eee;
       }
+    }
+  }
+  .error {
+    background-color: aliceblue;
+    padding: 30px;
+    p {
+      text-align: center;
+      max-width: 836px;
     }
   }
 `;

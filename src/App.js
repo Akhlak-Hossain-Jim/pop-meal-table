@@ -5,7 +5,7 @@ function App() {
   const [Data, setData] = useState();
 
   useEffect(() => {
-    fetch("http://staging-api.dahmakan.com/test/orders/")
+    fetch("http://staging-api.dahmakan.com/test/orders")
       .then((res) => res.json())
       .then((data) => setData(data))
       .catch((err) => console.log(err));
@@ -89,6 +89,14 @@ function App() {
             ))
           )}
       </div>
+      {!Data && (
+        <div className="error">
+          <p>
+            Can't load the data right now. Please give it some time or reload
+            the tab. Thanks for your patience.
+          </p>
+        </div>
+      )}
     </AppContainer>
   );
 }
