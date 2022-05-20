@@ -32,6 +32,11 @@ export const AppContainer = styled.main`
         }
         &.date {
           color: var(--almost-black);
+          display: flex;
+          gap: 16px;
+          button {
+            padding: 12px 16px 10px;
+          }
         }
         &.time {
           font-weight: 700;
